@@ -1,0 +1,13 @@
+<body>
+  <h1>Songs</h1>
+  <ul>
+    <% songs.forEach(song => { %>
+      <li>
+				<%= song.text %> 
+				- 
+				<%= song.isLane8 ? 'Lane8' : 'Odesza' %>
+			</li>
+    <% }) %>
+  </ul>
+  <a href="/home">go back</a>
+</body>
